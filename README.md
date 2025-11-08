@@ -32,6 +32,7 @@ To compile on MS Windows using MinGW c compiler
 `mingw32-make -f Makefile.mingw32`
 ###
 To run on MS CMD terminal
+###
 `mshapes <radius>`
 ###
 e.g.
