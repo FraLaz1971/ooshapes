@@ -1,7 +1,7 @@
 # OOSHAPES
-This project is a simple example of how implement objects with the Object Oriented
-paradigm in pure c language (not c++). We implement the shape class and the circle class
-as extension of the geometrical shape, inherting the methods of shape.
+This project is a simple example of how to implement using the Object Oriented
+paradigm in pure c language (not c++). We implement the shape class and the circle class,
+that is an extension of the geometrical shape, inheriting the methods of shape.
 ###
 It is written in c standard and can be compiled and run on Linux, Mac, and Microsoft Windows.
 ###
@@ -20,8 +20,11 @@ To compile on linux
 `make`
 ###
 To run on linux terminal
+###
 `./mshapes <radius>`
+###
 e.g.
+###
 `./mshapes 40`
 ###
 To compile on MS Windows using MinGW c compiler
@@ -30,9 +33,10 @@ To compile on MS Windows using MinGW c compiler
 ###
 To run on MS CMD terminal
 `mshapes <radius>`
-e.g.
-`mshapes 40`
 ###
+e.g.
+###
+`mshapes 40`
 ###
 To compile on MS Windows using MSVC compiler
 ###
