@@ -1,0 +1,22 @@
+CC=gcc -g -O2
+LD=gcc
+CFLAGS=
+LDFLAGS=
+OEXT=.o
+EEXT=.exe
+RM=del /Q /F
+.PHONY: all clean
+all: mshapes$(EEXT)
+
+shape$(OEXT): shape.c
+	$(CC) -c $<
+circle$(OEXT): circle.c
+	$(CC) -c $<
+mshapes$(OEXT): mshapes.c
+	$(CC) -c $<
+
+mshapes$(EEXT): mshapes$(OEXT) shape$(OEXT) circle$(OEXT)
+	$(LD) $^ -o $@
+clean:
+	$(RM) *.o mhsapes$(EEXT)
+

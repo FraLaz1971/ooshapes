@@ -1,0 +1,21 @@
+CC=cl
+LD=link
+CFLAGS=
+LDFLAGS=
+OEXT=.obj
+EEXT=.exe
+RM=del /Q /F
+all: mshapes$(EEXT)
+
+shape$(OEXT): shape.c
+	$(CC) /c $?
+circle$(OEXT): circle.c
+	$(CC) /c $?
+mshapes$(OEXT): mshapes.c
+	$(CC) /c $?
+
+mshapes$(EEXT): mshapes$(OEXT) shape$(OEXT) circle$(OEXT)
+	$(LD) $** /out:$@
+clean:
+	$(RM) *.obj mshapes$(EEXT)
+
